@@ -1,0 +1,18 @@
+SELECT 
+	clients.name as client_name,
+	SUM(orders.quantity * nomenclature.price) as sum
+FROM 
+	clients_orders
+LEFT JOIN orders ON clients_orders.id = orders.ord_id
+LEFT JOIN nomenclature ON orders.nomenclature_id_id = nomenclature.nomenclature_id
+LEFT JOIN clients ON clients_orders.client_id = clients.user_id
+GROUP BY clients.name
+
+SELECT
+	c1.name,
+    (SELECT COUNT(*)
+    FROM categories c2
+    WHERE parent_id = c1.cathegory_id) as children_amount
+FROM categories as c1
+
+
