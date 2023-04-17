@@ -3,18 +3,18 @@
 ### Установка
 В виртуальном окружении
 
-1. git clone https://github.com/NuzhnyiArtem/tests
-2. cd tests\Flashlight
-3. pip install -r requirements.txt
+1. `git clone https://github.com/NuzhnyiArtem/tests`
+2. `cd tests\Flashlight`
+3. `pip install -r requirements.txt`
 
 
 ### Запуск сервера
-python server.py
+`python server.py`
 
 ### Запуск клиента
-python Flashlight.py
+`python Flashlight.py`
 
 ### Подаются команды вида
 
-{"command": "on"} 
-{"command":"color", "metadata": 2}
+`{"command": "on"}`
+`{"command":"color", "metadata": 2}`
