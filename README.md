@@ -16,7 +16,7 @@
 ### Запуск клиента
 `python Flashlight.py`
 #### Запуск клиента для сервера на aiohttp
-``client_for_aiohttp_server.py`
+`client_for_aiohttp_server.py`
 
 ### Подаются команды вида
 
